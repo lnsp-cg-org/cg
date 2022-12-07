@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+lnsp-cg.org	TRUE	/	FALSE	1999999999	PHPSESSID	94520d995d185b9b64a6460da31a6d35
+lnsp-cg.org	TRUE	/	FALSE	1999999999	nom_cookie	majdate
+
