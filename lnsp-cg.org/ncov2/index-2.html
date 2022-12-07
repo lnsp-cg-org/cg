@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE HTML>
+<html lang="fr">
+
+
+<!-- Mirrored from lnsp-cg.org/ncov2/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Dec 2022 05:47:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta http-equiv="Refresh" CONTENT="95;URL=../index.html">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../images/republic-of-the-congo.svg" />
+    <title>COVID-CGO INFO</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="lnsp/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/bootstrap%404.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="../../code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="../../cdn.jsdelivr.net/npm/bootstrap%404.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <link href='../../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    <script src='../../cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template                onMouseOver="window.status='Merci de respecter le contenu en ne pas le copier sans autorisation!'; return true;"-->
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <link href="lnsp/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <style>
+    @media screen and (max-width: 650px) {
+        .sidebar-brand-text {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 650px) {
+        #zname {
+            display: none;
+        }
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* background-color: yellowgreen; */
+        background-image: url("../images/cielblue.jpg");
+
+        /* background: linear-gradient(to bottom, #6e529d 0%, #d97b93 100%); */
+    }
+    </style>
+
+    <script LANGUAGE="JavaScript">
+    // Fonction executée lors de l'utilisation du clic droit.
+
+    function disableselect(e) {
+        return false
+    }
+
+    function reEnable() {
+        return true
+    }
+
+    //if IE4+ 
+    document.onselectstart = new Function("return false");
+    document.oncontextmenu = new Function("return false");
+    //if NS6 
+    if (window.sidebar) {
+        document.onmousedown = disableselect;
+        document.onclick = reEnable;
+    }
+    </script>
+
+    <script>
+    function xygraphic() {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "light2",
+            title: {
+                text: " titre ici"
+            },
+            axisY: {
+                includeZero: true;
+            },
+            legend: {
+                curseur: "pointer",
+                verticalAlign: "center",
+                horizontalAlign: "right",
+                itemclick: toggleDataSeries
+            },
+            Data: [{
+                type: "column",
+                name: "Cas confirmés",
+                indexLabel: "{y}",
+                yValueFormatString: "$#0.##",
+                showInLegend: true,
+                dataPoints: null            }, {
+                type: "column",
+                name: "Cas guéris",
+                indexLabel: "{y}",
+                yValueFormatString: "$#0.##",
+                showInLegend: true,
+                dataPoints: null            }]
+        });
+        /*
+        ,{
+            type:"column" , 
+            name:"Cas actifs" , 
+            indexLabel:"{y}" , 
+            yValueFormatString:"$#0.##", 
+            showInLegend:true , 
+            dataPoints:  
+        }
+
+
+        */
+        chart.render();
+
+        function toggleDataSeries(e) {
+            if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                e.dataSeries.visible = false;
+            } else {
+                e.dataSeries.visible = true;
+            }
+            chart.render();
+        }
+
+    };
+    </script>
+
+</head>
+
+<body id="page-top" onload="xygraphic()" onselectstart="return false" oncontextmenu="return false"
+    ondragstart="return false" ;>
+
+
+    <!--hr class="sidebar-divider d-none d-md-block" -->
+    <div id="wrapper">
+
+        <div id="content-wrapper" class="d-flex flex-column" style="background-color: #11ffee00;">
+            <br />
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <nav style="height:70pt; padding:auto; margin:auto;"
+                class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <ul style="text-align:center;">
+                    <li class=" d-flex align-items-center justify-content-center">
+                        <span>
+                            <img src="../images/republic-of-the-congo.svg" width="40" height="40"
+                                alt="Drapeau Congolais" />
+                        </span>
+                        <div style="text-align:center;">
+                            <a id="accordionSidebar" href="index.html">
+                                <span id="zname" href="#" style="color: #000000;">
+                                    <h4>CONSULTATION DES RESULTATS</h4>
+                                </span>
+
+                                <div>
+                                    <h3 class="sidebar-brand-text mx-3">
+                                        PLATEFORME CONSULTATION DES RESULTATS DES TESTS DE DEPISTAGE DE LA COVID-19
+                                    </h3>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </li>
+                </ul>
+
+            </nav>
+
+            <!-- Statistiques -->
+            <div id="" class="d-flex flex-column">
+
+                <div id="content">
+                    <div id="container" style="
+                            background:
+                            linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+                            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+                            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+                            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+                            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+                            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+                            background-color: #131313;
+                            background-size: 20px 20px;
+                            " ;>
+
+        
+                        <form action="https://lnsp-cg.org/ncov2/verification.php" method="POST" style="
+                                    background-color: #11ffee00;
+                                " ;>
+
+                            <label>
+                                <div id = "reslt"  style="color: rgb(73, 135, 175); font-size: 1.5em; text-align: center;">Entrer l'identifiant figurant sur votre coupon du test covid-19. <br/><p style ="color: red; border: 1px solid #e66465; font-size: 0.70em;">NB: Tout symbole ou caractère rond sur votre code, remplacez le par la lettre O. Ce n'est pas zero.</p></div>                            </label>
+
+                            <input id = "xcode" style ="text-transform:uppercase;" type="text" placeholder="Entrer l'identifiant en dessous du code à barre sur votre coupon." name="password" required><input type="submit" id="submit" value="OK" onclick ="veriftail()"/>
+                        </form>
+
+                        
+                    </div>
+
+                    <hr class="sidebar-divider d-none d-md-block">
+
+                    <div class="container-fluid">
+
+                        
+
+                    </div>
+
+                    <div class="container">
+
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-1 text-gray-800" style="text-align: center;">
+                                Rapport de la situation de la Covid au Congo, à la date du :
+
+                                <strong>
+                                    mercredi 07 d�cembre 2022                                </strong>
+                            </h1>
+
+
+                        </div>
+
+                        <!-- <span class=""> <strong>Situation en cours d'actualisation</strong> </span> -->
+                                                <!-- Earnings (Monthly) Card Example >
+                                
+                            <div class="row" style = "background-color: #11ffee00;">
+
+                                <div class="col-xl-3 col-md-6 mb-4">
+                                    <div class="card border-left-info shadow h-100 py-2">
+                                        <div class="card-body">
+                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">CAS POSITIFS (Depuis le 14 mars 2020)</div>
+                                                
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2"><div class="h4 mb-0 font-weight-bold text-gray-800">5089 CAS CONFIRMES</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-info-circle fa-2x text-300" style="color: #0099cc;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-md-6 mb-4">
+                                    <div class="card border-left-success shadow h-100 py-2">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">CAS GUERIS</div>
+                                                        <div class="row no-gutters align-items-center">
+                                                            <div class="col-auto">
+                                                                <div class="h4 mb-0 mr-3 font-weight-bold text-gray-800">4002 (78.6%)</div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="progress progress mr-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="78.6" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <i class="fas fa-medkit fa-2x  text-300" style="color: #20c997;"></i>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-3 col-md-6 mb-4">
+                                    <div class="card border-left-danger shadow h-100 py-2">
+                                        <div class="card-body">
+                                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">DECEDES</div>
+                                                    
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2"><div class="h4 mb-0 font-weight-bold text-gray-800">89 DECES CAS POSITIFS</div>
+                                                </div>
+                                                    <div class="col-auto">
+                                                        <i class="fas fa-minus-square fa-2x text-300" style="color: #ff6b6b;"></i>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-md-6 mb-4">
+                                    <div class="card border-left-warning shadow h-100 py-2">
+                                        <div class="card-body">
+                                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">CAS ACTIFS</div>
+                                                    
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="h4 mb-0 font-weight-bold text-gray-800">988 CAS SONT EN COURS DE SUIVI</div>
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <i class="fas fa-heartbeat fa-2x text-300" style="color: #ff922b;"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div-->
+
+
+                    </div>
+
+
+                    <!--div id="chartContainer" style="height:370px; width: 100%;"></div-->
+
+
+                </div>
+
+                <hr class="sidebar-divider d-none d-md-block">
+
+
+                <div class="card shadow mb-10" style=" margin:auto;">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary" style="text-align:center;">
+                            Télécharger le SITREP ici!
+                        </h6>
+                    </div>
+
+                </div>
+
+                <hr class="sidebar-divider d-none d-md-block">
+                <div style="position:bottom;">
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span><strong>Copyright &copy; LABORATOIRE NATIONAL DE SANTE PUBLIQUE,
+                                        <!--a href="mailto:couspcg@gmail.com"> ECRIVEZ-NOUS.</a-->
+                                    </strong></span>
+                            </div>
+
+                        </div>
+
+                    </footer>
+
+                </div>
+
+
+            </div>
+            <!-- End of Content Wrapper -->
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+    function veriftail(xstr) {
+        var ntail = document.getElementById("xcode").value.length;
+        if (ntail !== 16) {
+            //var vra = confirm("L'identifiant entré n'a pas le nombre de caractères souhait!");
+        }
+        return vra;
+    }
+
+    function FormSubmit(page) {
+        // On recup le formulaire
+        formulaire = document.getElementById('formulaire');
+        // On change l'action
+        formulaire.action = page;
+        // Et on envoit le formulaire
+        formulaire.submit();
+    }
+    </script>
+
+    <script src="../../canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.html"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.html"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.html"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.html"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.html"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.html"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+    <script>
+    // Fonction executée lors de l'utilisation du clic droit.
+    $(document).bind("contextmenu", function() {
+        alert('Merci de respecter le contenu en ne pas le copier sans autorisation!');
+        return false;
+    });
+    </script>
+
+</body>
+
+
+<!-- Mirrored from lnsp-cg.org/ncov2/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Dec 2022 05:47:09 GMT -->
+</html>

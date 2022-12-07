@@ -1,0 +1,74 @@
+/*body{
+    background: rgb(75, 182, 190);
+    margin:10 auto;
+}
+
+*/
+#container1{
+    width:auto;
+    margin:0 auto;
+    font-size: xx-large;
+    text-align: center;
+
+    color: rgb(8, 8, 8);
+
+    text-transform: uppercase;
+    background-image:url("images/labo.html");
+}
+
+#container{
+    width:85%;
+    margin:0 auto;
+    margin-top:1px;
+    text-align: center;
+}
+ /*Bordered form */
+form {
+   /*  width:100%; */
+    padding: 6px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 7px 13px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(7, 230, 181);
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #1f7a24;
+    color: white;
+    padding: 7px 13px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+input[type=reset] {
+    background-color: #1f7a24;
+    color: white;
+    padding: 7px 13px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #d36b0a;
+}
+
+input[type=reset]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #d36b0a;
+}
